@@ -1,7 +1,6 @@
 import { useDispatch, useSelector } from "react-redux"
-import AddForm from "./AddForm";
-import { deleteTodo } from "../features/todo/todoSlice";
-import { markAsDone } from "../features/todo/todoSlice";
+import AddForm from './AddForm'; // Ensure AddForm exists in the correct location
+import { deleteTodo, markAsDone } from '../features/todo/todoSlice'; // Ensure todoSlice exists
 
 export default function Todo() {
     const todos = useSelector((state) => state.todos);
